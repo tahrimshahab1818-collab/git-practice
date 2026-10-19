@@ -11,8 +11,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px 100px;
-    background-color: #d96846;
+    padding: 20px 30px;
+    background-color: #12054e;
 }
 
 .logo{
@@ -20,13 +20,23 @@ body {
    font-size: 24px;
    font-weight: bold;
 }
-.nav-links hover{
-   display: flex;
-   gap: 150px;
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 40px;
 }
+
+
 .nav-links a {
-    color: white
+    color: white;
+    text-decoration-line: none;
+    transition: color 0.3s ease;
     
+}
+.nav-links a:hover {
+    color: yellow;
+    text-decoration: underline;
 }
 
 .navbar button {
@@ -34,4 +44,15 @@ body {
     border: none;
     border-radius: 6px;
     cursor: pointer;
+}
+@media (max-width: 600px){
+     .navbar {
+         flex-direction: column;
+         gap: 20px;
+    }
+    .nav-links{
+         flex-wrap: wrap;
+         justify-content: center;
+         gap: 20px;
+    }
 }
